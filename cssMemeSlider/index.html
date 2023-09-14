@@ -5,37 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&family=Kalam:wght@300;700&family=PT+Serif:ital,wght@1,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
     <title>jANUARY,1ST</title>
 </head>
 <body>
-    <div class="container">
-        <main class="main">
-            <section class="cssSlaider">
-                <div class="item-books">
-                    <ul class="list">
-                        <li class="list-item"><img src="./img1.jpg" alt="doctor-bin" title="it's mem"></li>
-                        <li class="list-item"><img src="./img2.jpg" alt="doctor-bin" title="it's mem"></li>
-                        <li class="list-item"><img src="./img3.jpg" alt="doctor-bin" title="it's mem"></li>
-                        <li class="list-item"><img src="./img4.jpg" alt="doctor-bin" title="it's mem"></li>
-                    </ul>
-                </div>
-                <div class="mix">
-                   <div class="texts">
-                        <div class="one"><span>I'm the best of the best!!!</span></div>
-                        <div class="two"><span>I'm the best of the best of the best!!!</span></div>
-                        <div class="three"><span>Keep going... I'm believe in you</span></div>
-                        <div class="four"><span>Don't stop!!!</span></div>
-                   </div>                   
-                   <div class="inputs-block">
-                       <input type="radio" name="" id="one" >
-                       <input type="radio" name="" id="two" checked>
-                       <input type="radio" name="" id="three" checked>
-                       <input type="radio" name="" id="four" checked>
-                   </div>
-                </div>
+    <div class="sliders wrapper">
+       
+        <div class="wrapMargin">
+        <h1> CSS Meme Slider</h1>
+        <h2>Only CSS</h2>
+
+        <div class="all">
+            <input type="radio" name="pictures" id="imageCheckbox" checked>
+            <input type="radio" name="pictures" id="imageCheckbox1">
+            <input type="radio" name="pictures" id="imageCheckbox2">
+            <input type="radio" name="pictures" id="imageCheckbox3">
                 
-            </section>
-        </main>
+                <div class="all-pictures">
+                    <div class="show" id="r1"><img src="./imgs/img1.jpg" alt="picture"></div>
+                    <div class="show"><img src="./imgs/img2.jpg" alt="picture"></div>
+                    <div class="show"><img src="./imgs/img3.jpg" alt="picture"></div>            
+                    <div class="show"><img src="./imgs/img4.jpg" alt="picture"></div> 
+                </div>
+               
+                <div class="other" id="pop"> 
+                    <div class="showText">
+                            <div class="texts">
+                                <div class="worked">I'm the best of the best!!!</div>
+                                <div class="worked">I'm the best of the best of the best!!!</div>
+                                <div class="worked">Keep going... I believe to you</div>
+                                <div class="worked">Don't stop!!!</div>
+                            </div>
+                    </div>
+                    
+                    <div class="all-labels">
+                        <label for="imageCheckbox" class="but"><span></span></label>                        
+                        <label for="imageCheckbox1" class="but"><span></span></label>                        
+                        <label for="imageCheckbox2" class="but"><span></span></label>                        
+                        <label for="imageCheckbox3" class="but"><span></span></label>
+                    </div>
+                   
+                </div>
+
+        </div>
+
+    </div>
     </div>
     
 </body>
